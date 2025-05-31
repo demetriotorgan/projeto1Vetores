@@ -15,10 +15,12 @@ let raioItem=15;
 let gameOver = false;
 let botaoRestart;
 let pontos;
+let canvas;
 
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.touchStarted(()=>{});
   posicao = createVector(width/2, height/2);
   alvo=posicao.copy();
   vel = createVector(0,0);
