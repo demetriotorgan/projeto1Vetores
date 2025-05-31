@@ -182,6 +182,7 @@ function verificaColisaoPerseguidor(){
       botaoRestart = createButton("Recomeçar");
       botaoRestart.position(width/2 -50, height/2+30);
       botaoRestart.mousePressed(reiniciarJogo);
+      botaoRestart.touchStarted(reiniciarJogo);
     }
   }
 }
